@@ -1,0 +1,247 @@
+body {
+  font-family: 'Georgia', serif;    
+  background-color: white;
+  padding: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #B4297C;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-size: 1.2rem;
+  transition: color 0.3s, background-color 0.3s; /* Transition for cool hover effect */
+  padding: 30px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: #B4297C;
+  border-radius: 5px; /* Rounded corners for hover effect */
+  padding: 10px;
+}
+
+.logo-container {
+  background-color: white;
+  height: 100px; /* Same height as the navigation bar */
+  display: flex;
+  align-items: center;
+  position: absolute; /* Position the logo container separately */
+  flex: 0 0 auto;  /* Set flex properties for logo container */
+  margin-left: auto; /* Add margin to push container right within navbar */
+}
+
+.large-logo {
+  max-height: 300px; /* Set a smaller height for the logo */
+  width: auto;
+  margin-left: 20px; /* Assuming you already have margin for left positioning */
+  padding-top: 5px; /* Add padding from the top */
+  padding-bottom: 30px;
+}
+
+hr {
+  margin-top: 0; /* Remove default margin */
+  margin-bottom: 0; /* Remove default margin */
+  border: 1px solid #EBDEFA; /* Set the border style, color, and thickness */
+  width: 100%; /* Set the width to 100% for a full-width line */
+}
+
+.newspaper-style {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe {
+  margin-bottom: 20px;
+}
+
+.recipe-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #B4297C;
+}
+
+.recipe-meta {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #B4297C;
+
+}
+
+.sidebar-section p, .sidebar-section ul {
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+}
+
+.sidebar-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar-section ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar-section ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sidebar-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  margin-right: 10px;
+  color: #000;
+}
+
+.social-icon:hover {
+  color: #B4297C;
+}
+
+.modal-header {
+  background-color: #B4297C;
+  color: #fff;
+}
+
+.modal-body {
+  font-family: 'Arial, sans-serif';
+}
+
+.modal-body .form-control {
+  border: 1px solid #B4297C;
+}
+
+.modal-body .btn-primary {
+  background-color: #B4297C;
+  border-color: #B4297C;
+}
+
+.checked {
+  color: #B4297C;
+}
+
+.sidebar h3 {
+  font-size: 1.5em;
+  color: #B4297C;
+}
+
+.sidebar .form-check-label {
+  font-size: 1em;
+  color: #666;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25em;
+  color: #B4297C;
+}
+
+.card-text {
+  color: #666;
+  margin: 10px 0;
+}
+
+.fa-star.checked {
+  color: #B4297C;
+}
+
+.btn-primary {
+  background-color: #B4297C;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #EBDEFA;
+  color: #333;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+      padding: 10px;
+  }
+  .large-logo {
+      width: 250px;
+  }
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.rating .fa {
+  color:#B4297C ;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  font-size: 16px;
+  color: #333;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+

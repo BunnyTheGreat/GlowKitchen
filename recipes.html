@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Kitchen - Recipes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="logo-container" class="ml-auto" style="height:100px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="glow_kitchen_logo.png" alt="Glow Kitchen Logo" class="large-logo">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="height:100px">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+                <li class="nav-item"><a class="nav-link" href="socials.html">Socials</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container newspaper-style">
+        <div class="row">
+            <!-- Filter Menu -->
+            <div class="col-md-3 sidebar">
+                <h3>Filter By</h3>
+                <form id="filterForm">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="desserts" value="desserts">
+                        <label class="form-check-label" for="desserts">Desserts</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="appetizers"
+                            value="appetizers">
+                        <label class="form-check-label" for="appetizers">Appetizers</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="indianCuisine"
+                            value="indianCuisine">
+                        <label class="form-check-label" for="indianCuisine">Indian Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="italianCuisine"
+                            value="italianCuisine">
+                        <label class="form-check-label" for="italianCuisine">Italian Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="asianCuisine"
+                            value="asianCuisine">
+                        <label class="form-check-label" for="asianCuisine">Asian Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="mexicanCuisine"
+                            value="mexicanCuisine">
+                        <label class="form-check-label" for="mexicanCuisine">Mexican Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="americanCuisine"
+                            value="americanCuisine">
+                        <label class="form-check-label" for="americanCuisine">American Cuisine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="breakfast"
+                            value="breakfast">
+                        <label class="form-check-label" for="breakfast">Breakfast</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="lunch" value="lunch">
+                        <label class="form-check-label" for="lunch">Lunch</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="filterOptions" id="dinner" value="dinner">
+                        <label class="form-check-label" for="dinner">Dinner</label>
+                    </div>
+                </form>
+                <button id="showAllButton" class="btn btn-primary mt-3">Show All Recipes</button>
+            </div>
+
+            <!-- Recipe Cards -->
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4 recipe-card" data-category="americanCuisine lunch" data-title="homemade veggie burger patties">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Homemade Veggie Burger Patties</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="breakfast dessert" data-title="fresh berry pancakes">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Fresh Berry Pancakes</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="lunch americanCuisine" data-title="spicy chickpea salad vegetarian">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Spicy Chickpea Salad</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="desserts" data-title="perfect summer blueberry brownies dessert">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Perfect Summer Blueberry Brownies</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="indianCuisine dinner" data-title="cheesy rajma masala">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Cheesy Rajma Masala</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="mexicanCuisine lunch" data-title="veggie black bean tacos">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Veggie Black Bean Tacos</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="asianCuisine dinner" data-title="indo-chinese egg fried rice">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Indo-Chinese Egg Fried Rice</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="italianCuisine lunch" data-title="baked summer pasta italian">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Baked Summer Pasta</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="indianCuisine lunch" data-title="fire roasted naan pizza indian">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Fire Roasted Naan Pizza</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="mexicanCuisine appetizers" data-title="loaded veggie nachos appetizers mexicanCuisine">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Loaded Veggie Nachos</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="snacks" data-title="zesty lemon hummus">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Zesty Lemon Hummus</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 recipe-card" data-category="desserts" data-title="creamy caramel blueberry cheesecake dessert">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Creamy Caramel Blueberry Cheesecake</a></h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Kitchen</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="logo-container" class="ml-auto" style="height:100px;">
+            <a class="navbar-brand" href="index.html">
+                <img src="glow_kitchen_logo.png" alt="Glow Kitchen Logo" class="large-logo">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="height:100px">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="recipes.html">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+                <li class="nav-item"><a class="nav-link" href="socials.html">Socials</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Content -->
+     <br>
+    <div class="container newspaper-style">
+        <div class="row">
+            <div class="col-md-8">
+                <article class="recipe">
+                    <img src="https://via.placeholder.com/300" alt="Sample Recipe 2" class="recipe-image" style="height:300px; width:700px;">
+                    <br>
+                    <br>
+                    <h2 class="recipe-title">Perfect Summer Blueberry Brownies
+                    </h2>
+                    <p class="recipe-meta">By Aishani Uddaraju | July 25, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, justo at ultricies cursus, arcu orci cursus nunc, in tincidunt nunc orci eget lorem. Integer fermentum massa nec justo tincidunt, nec congue eros convallis.</p>
+                    <span>Flare Friendly:</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full" style="color:#B4297C"></span>
+                    
+                    <br>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <hr>
+                <br>
+                <article class="recipe">
+                    <img src="https://via.placeholder.com/300" alt="Sample Recipe 2" class="recipe-image" style="height:300px; width:700px;">
+                    <br>
+                    <br>
+                    <h2 class="recipe-title">Creamy Blueberry Caramel Cheesecake</h2>
+                    <p class="recipe-meta">By Aishani Uddaraju | July 24, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, justo at ultricies cursus, arcu orci cursus nunc, in tincidunt nunc orci eget lorem. Integer fermentum massa nec justo tincidunt, nec congue eros convallis.</p>
+                    <span>Flare Friendly:</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <br>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                <hr>
+                <br>
+                <article class="recipe">
+                    <img src="https://via.placeholder.com/300" alt="Sample Recipe 2" class="recipe-image" style="height:300px; width:700px;">
+                    <br>
+                    <br>
+                    <h2 class="recipe-title">Roasted Ratatouille Pasta</h2>
+                    <p class="recipe-meta">By Aishani Uddaraju| July 23, 2024</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, justo at ultricies cursus, arcu orci cursus nunc, in tincidunt nunc orci eget lorem. Integer fermentum massa nec justo tincidunt, nec congue eros convallis.</p>
+                    <span>Flare Friendly:</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full" style="color:#B4297C"></span>
+                    <span class="fa fa-star"></span>
+                    <br>
+                    <a href="#" class="read-more">Read More</a>
+                </article>
+                
+            </div>
+            
+            <div class="col-md-4 sidebar">
+                <div class="sidebar-section">
+                    <form id="searchForm" onsubmit="return handleSearch(event)">
+                        <input type="search" id="searchInput" placeholder="Search for your next meal..." style="width:300px;border-color: #B4297C;">
+                    </form>
+                </div>
+                <hr>
+                <br>
+                <div class="sidebar-section">
+                    <h3>Hi, I'm Aishani!</h3>
+                    
+                    <p>I love to go hiking, read, listen to music, but most importantly, cook! I started this blog not only because of my passion for food, but because I ran into a problem: I wanted to find quick and easy recipes that I could eat, even when my eczema is flared. But how do I know what was safe? That is why I implemented my flare-friendly meter, where you can see if the ingredients in a recipe can aggrevate your skin even more on your bad days. I hope you enjoy my recipes as much as I love making them! </p>
+                </div>
+                
+                <hr>
+                <br>
+                <div class="sidebar-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="recipes.html">Breakfast</a></li>
+                        <li><a href="recipes.html">Lunch</a></li>
+                        <li><a href="recipes.html">Dinner</a></li>
+                        <li><a href="recipes.html">Appetizers</a></li>
+                        <li><a href="recipes.html">Desserts</a></li>
+
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <div class="sidebar-section">
+                    <h3>Follow for the Latest Recipes</h3>
+                    <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <hr>
+                <br>
+                <div class="sidebar-section">
+                    <h3>Top Rated Recipes</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <a href="recipe1.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 1"></a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="recipe2.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 2"></a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="recipe3.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 3"></a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="recipe4.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 4"></a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="recipe5.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 5"></a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="recipe6.html"><img src="https://via.placeholder.com/150" class="img-fluid" alt="Recipe 6"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter Popup -->
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalLabel">Subscribe to the Glow Kitchen Newsletter!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Stay updated with our latest recipes and blog posts, along with special recipes ONLY for subscribers!</p>
+                    <br>
+                    <img src="https://via.placeholder.com/300" alt="Sample Recipe 2" class="recipe-image" style="height:200px; width:460px;">
+                    <br>
+                    <form>
+                        <div class="form-group">
+                            <br>
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            setTimeout(function() {
+                $('#newsletterModal').modal('show');
+            }, 15000); // 15 seconds
+        });
+    </script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            const searchQuery = document.getElementById('searchInput').value;
+            window.location.href = `recipes.html?search=${encodeURIComponent(searchQuery)}`;
+        }
+    </script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
