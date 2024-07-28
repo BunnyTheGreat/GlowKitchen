@@ -181,6 +181,13 @@
             window.location.href = `recipes.html?search=${encodeURIComponent(searchQuery)}`;
         }
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Clear the local storage related to Mailchimp popup
+            localStorage.removeItem("MCPopupClosed");
+        });
+    </script>
+    
     
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
